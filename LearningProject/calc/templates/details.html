@@ -1,0 +1,12 @@
+{% extends "Master.html" %}
+{% block title %}
+ My tennis club-Details of a particular students
+{% endblock %}
+
+{% block content %}
+    <h1>Student Details</h1>
+    <h4>{{student.firstname}}{{student.lastname}}</h4>
+    <p>Phone:{{student.phone}}</p>
+    <p>joined_date:{{student.joined_date}}</p>
+    <p>Back to <a href="/home">Home</a></p>
+{% endblock %}
